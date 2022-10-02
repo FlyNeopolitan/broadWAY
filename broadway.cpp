@@ -1,5 +1,5 @@
 template<typename Tvertex, typename Tweight>
-unordered_map<Tvertex, Tweight> shortestDist(vector<tuple<Tvertex, Tvertex, Tweight>> edges, vector<Tvertex> vertices, Tvertex start) {
+unordered_map<Tvertex, Tweight> shortestDists(vector<tuple<Tvertex, Tvertex, Tweight>> edges, vector<Tvertex> vertices, Tvertex start) {
     // initialization 
     unordered_map<Tvertex, vector<pair<Tvertex, Tweight>>> neighbors;
     for (auto [src, dst, weight] : edges) {
